@@ -7,5 +7,6 @@ class Snag < Formula
 
   def install
     bin.install "snag"
+    chmod 0755, bin/"snag"
   end
 end
