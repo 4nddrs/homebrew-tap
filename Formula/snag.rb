@@ -6,7 +6,12 @@ class Snag < Formula
   version "1.0.0"
 
   def install
+
     bin.install "snag"
+  end
+
+  def post_install
+
     chmod 0755, bin/"snag"
   end
 end
