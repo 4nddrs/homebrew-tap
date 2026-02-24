@@ -1,20 +1,20 @@
 class Snag < Formula
   desc "SNAG (Simple Network API Gopher) is a high-performance, keyboard-driven Terminal User Interface (TUI) designed specifically for developers who want to explore and test FastAPI endpoints without leaving the terminal."
   homepage "https://github.com/4nddrs/snag"
-  url "https://github.com/4nddrs/snag/releases/download/v1.0.0/snag.tar.gz"
-  sha256 "5849C8F4892EAD7A8440D188B9A45B48A4AFF3674B2C380251DBB23B739F39F7"
-  version "1.0.0"
+  url "https://github.com/4nddrs/snag/releases/download/v1.0.1/snag-mac.tar.gz"
+  sha256 "a046805082af8e9fd77c766432401623aeb86c982273b7d3292697e8e38d945f"
+  version "1.0.1"
 
 if OS.mac?
-    url "https://github.com/4nddrs/snag/releases/download/v1.0.0/snag.tar.gz"
-    sha256 "5849C8F4892EAD7A8440D188B9A45B48A4AFF3674B2C380251DBB23B739F39F7"
+    url "https://github.com/4nddrs/snag/releases/download/v1.0.1/snag-mac.tar.gz"
+    sha256 "a046805082af8e9fd77c766432401623aeb86c982273b7d3292697e8e38d945f"
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/4nddrs/snag/releases/download/v1.0.0/snag-linux-arm64.tar.gz"
-      sha256 "D4A5D6281D5FA5F33E4A3245A30DC704CB7FE947F20F0671CCD01ED580327CFC"
+      url "https://github.com/4nddrs/snag/releases/download/v1.0.1/snag-linux-arm64.tar.gz"
+      sha256 "cbe98fec0d89435729e3d40992111b6764a050c78b9cecca02ad2a9d117543c6"
     else
-      url "https://github.com/4nddrs/snag/releases/download/v1.0.0/snag-linux-amd64.tar.gz"
-      sha256 "22037D4D17AE2AA45C6F3F7453DCCC0024AB2C26AEE5DD9B29922CCC8A90597A"
+      url "https://github.com/4nddrs/snag/releases/download/v1.0.1/snag-linux-amd64.tar.gz"
+      sha256 "3f8f8df58575692572a123cd0b2d53a51879df3e448e4af6bd06793a2de389b4"
     end
   end
 
